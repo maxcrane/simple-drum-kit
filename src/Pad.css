@@ -1,0 +1,13 @@
+.pad {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 10px;
+    transition:  background-color 0.05s;
+    background-color: white;
+}
+
+.padClicked {
+    background-color: dimgrey;
+}
