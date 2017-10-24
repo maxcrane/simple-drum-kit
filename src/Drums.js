@@ -8,15 +8,18 @@ class Drums extends Component {
         super(props);
         this.state = {
             pads: DEFAULT_CONFIG,
+            tempo: 140 //TODO: make pads loop to tempo if they are held down
         };
     }
 
     render() {
+        const tempo = {tempo: this.state.tempo};
+
         return (
             <div className="drums">
                 {
                     this.state.pads.map(
-                        (pad, index) => <Pad { ...pad } context={this.props.context} key={index} />
+                        (pad, index) => <Pad {...Object.assign(tempo, pad)} context={this.props.context} key={index} />
                     )
                 }
             </div>
