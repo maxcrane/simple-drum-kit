@@ -1,23 +1,23 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Drums.css';
 import Pad from './Pad';
+import { DEFAULT_CONFIG } from './utils/constants';
 
 class Drums extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            pads: [{file: 'foo.wav', keyCode: ''}, {file: 'bar.wav'}, {file: 'foo.wav'}, {file: 'bar.wav'},
-                {file: 'foo.wav'}, {file: 'bar.wav'}, {file: 'foo.wav'}, {file: 'bar.wav'},
-                {file: 'foo.wav'}, {file: 'bar.wav'}, {file: 'foo.wav'}, {file: 'bar.wav'},
-                {file: 'foo.wav'}, {file: 'bar.wav'}, {file: 'foo.wav'}, {file: 'bar.wav'}]
+            pads: DEFAULT_CONFIG,
         };
     }
 
     render() {
         return (
-            <div className={"drums"}>
+            <div className="drums">
                 {
-                    this.state.pads.map((pad) => <Pad data={pad}/>)
+                    this.state.pads.map(
+                        (pad, index) => <Pad { ...pad } context={this.props.context} key={index} />
+                    )
                 }
             </div>
         );
