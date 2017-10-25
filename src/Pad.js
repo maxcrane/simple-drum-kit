@@ -12,7 +12,7 @@ class Pad extends Component {
             randomRGBColor: null
         };
 
-        this.padDown = this.padDown.bind(this);
+        this.padClicked = this.padClicked.bind(this);
     }
 
     componentDidMount() {
@@ -62,7 +62,7 @@ class Pad extends Component {
 
     keyDahn(e) {
         if (e.key === this.props.trigger && !this.state.soundPlayed) {
-            this.padDown();
+            this.padClicked();
         }
     }
 
@@ -82,7 +82,7 @@ class Pad extends Component {
         source.start(startOffset);
     }
 
-    padDown() {
+    padClicked() {
         this.toggleClicked();
 
         if (this.state.buffer) {
@@ -118,7 +118,7 @@ class Pad extends Component {
 
         return (
             <div
-                onClick={ this.padDown }
+                onClick={ this.padClicked }
                 onKeyPress={ this.onKeyPress }
                 className={`${noFileClass} pad`}
                 style={pressedStyle}>
