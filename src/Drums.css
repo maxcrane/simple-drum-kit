@@ -1,13 +1,13 @@
 .drums {
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-    border-radius: 1px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    vertical-align: middle;
-    padding: 15px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: middle;
+  padding: 15px;
 }
