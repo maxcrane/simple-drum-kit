@@ -26,9 +26,9 @@ class Pad extends Component {
             randomRGBColor: {
                 r: this.randomRGBValue(),
                 g: this.randomRGBValue(),
-                b: this.randomRGBValue()
+                b: this.randomRGBValue(),
             }
-        })
+        });
     }
 
     registerKeyEvents() {
