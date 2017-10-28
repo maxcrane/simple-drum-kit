@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./Pad.css";
+import React, { Component } from 'react';
+import './Pad.css';
 
 class Pad extends Component {
   constructor(props) {
@@ -32,13 +32,13 @@ class Pad extends Component {
   }
 
   registerKeyEvents() {
-    document.addEventListener("keydown", this.keyDahn.bind(this), false);
-    document.addEventListener("keyup", this.keyUp.bind(this), false);
+    document.addEventListener('keydown', this.keyDahn.bind(this), false);
+    document.addEventListener('keyup', this.keyUp.bind(this), false);
   }
 
   unregisterKeyEvents() {
-    document.removeEventListener("keydown", this.keyDahn.bind(this), false);
-    document.removeEventListener("keyup", this.keyUp.bind(this), false);
+    document.removeEventListener('keydown', this.keyDahn.bind(this), false);
+    document.removeEventListener('keyup', this.keyUp.bind(this), false);
   }
 
   loadSampleBuffer() {
@@ -118,7 +118,7 @@ class Pad extends Component {
 
   render() {
     const noFileClass =
-      this.props.file && !this.state.clicked ? "active" : "inactive";
+      this.props.file && !this.state.clicked ? 'active' : 'inactive';
     const pressedStyle =
       this.props.file && this.state.randomRGBColor
         ? this.randomColorStyle()

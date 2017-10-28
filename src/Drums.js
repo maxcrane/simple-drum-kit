@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "./Drums.css";
-import Pad from "./Pad";
-import { DEFAULT_CONFIG } from "./utils/constants";
+import React, { Component } from 'react';
+import './Drums.css';
+import Pad from './Pad';
+import { DEFAULT_CONFIG } from './utils/constants';
 
 class Drums extends Component {
   constructor(props) {

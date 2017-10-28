@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "./App.css";
-import Drums from "./Drums";
+import React, { Component } from 'react';
+import './App.css';
+import Drums from './Drums';
 
 class App extends Component {
   componentWillMount() {

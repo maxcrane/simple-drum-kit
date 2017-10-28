@@ -1,5 +1,9 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "plugins": ["react", "jsx-ally", "import"]
+  "plugins": ["react", "jsx-ally", "import"],
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": ["warning", "double"]
+  }
 }
